@@ -14,6 +14,7 @@
 		8F2E6F1E2156E713008C26CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2E6F1C2156E713008C26CB /* LaunchScreen.storyboard */; };
 		8F2E6F292156E713008C26CB /* strollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E6F282156E713008C26CB /* strollTests.swift */; };
 		8F2E6F342156E713008C26CB /* strollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E6F332156E713008C26CB /* strollUITests.swift */; };
+		8F620832215723C300E19ED1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F620831215723C300E19ED1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8F2E6F2F2156E713008C26CB /* strollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = strollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2E6F332156E713008C26CB /* strollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strollUITests.swift; sourceTree = "<group>"; };
 		8F2E6F352156E713008C26CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F620831215723C300E19ED1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F620832215723C300E19ED1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				8F2E6F272156E713008C26CB /* strollTests */,
 				8F2E6F322156E713008C26CB /* strollUITests */,
 				8F2E6F112156E712008C26CB /* Products */,
+				8F620830215723C300E19ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				8F2E6F352156E713008C26CB /* Info.plist */,
 			);
 			path = strollUITests;
+			sourceTree = "<group>";
+		};
+		8F620830215723C300E19ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F620831215723C300E19ED1 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +205,11 @@
 				TargetAttributes = {
 					8F2E6F0F2156E712008C26CB = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8F2E6F232156E713008C26CB = {
 						CreatedOnToolsVersion = 10.0;
